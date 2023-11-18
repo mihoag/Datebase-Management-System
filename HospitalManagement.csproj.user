@@ -28,6 +28,21 @@
     <Compile Update="View\EmployeeSide\setSchedule.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\PatientSide\HomePatient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\patientRecordPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\PersonalInformation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\setDentistSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\ViewSchedulePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +70,21 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\EmployeeSide\setSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\HomePatient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\patientRecordPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\PersonalInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\setDentistSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\ViewSchedulePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Register.xaml">

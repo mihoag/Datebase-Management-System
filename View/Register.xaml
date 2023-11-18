@@ -5,22 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalManagement.View"
         mc:Ignorable="d"
-        Title="Register" Height="500" Width="800">
+        Title="Register" Height="550" Width="800">
     <Canvas>
         <Label FontSize="30" FontWeight="Bold" Content="HỆ THỐNG QUẢN LÍ PHÒNG KHÁM NHA KHOA" HorizontalAlignment="Left" Canvas.Left="72" VerticalAlignment="Center"></Label>
-        <Label Content="ĐĂNG KÍ" FontSize="25" FontWeight="Bold" Canvas.Left="357" Canvas.Top="50" HorizontalAlignment="Center" VerticalAlignment="Top"></Label>
-        <TextBlock Text="Tên đăng nhập:" FontSize="20" Canvas.Left="181" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+        <Label Content="ĐĂNG KÝ" FontSize="25" FontWeight="Bold" Canvas.Left="357" Canvas.Top="50" HorizontalAlignment="Center" VerticalAlignment="Top"></Label>
+        <TextBlock Text="Số điện thoại:" FontSize="20" Canvas.Left="181" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
         <TextBlock Text="Mật khẩu:" FontSize="20" Canvas.Left="181" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="100" ></TextBox>
-        <TextBox Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button Height="36" Width="106" Canvas.Left="366" Canvas.Top="372" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Click="register">Đăng kí</Button>
-        <TextBlock Text="Đã có tài khoản?" FontSize="15" Canvas.Left="315" Canvas.Top="439" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Height="23" Width="84" Canvas.Left="432" Canvas.Top="436" FontSize="15"  Content="Đăng nhập" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.628,1.634" Click="login"/>
+        <TextBox FontSize="20" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="100" ></TextBox>
+        <PasswordBox FontSize="20" Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Height="36" Width="106" Canvas.Left="366" Canvas.Top="420" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Click="register">Đăng ký</Button>
+        <TextBlock Text="Đã có tài khoản?" FontSize="15" Canvas.Left="315" Canvas.Top="475" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Height="23" Width="84" Canvas.Left="432" Canvas.Top="472" FontSize="15"  Content="Đăng nhập" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.628,1.634" Click="login"/>
         <TextBlock Text="Họ tên" FontSize="20" Canvas.Left="181" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox FontSize="20" Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock Text="Ngày sinh" FontSize="20" Canvas.Left="181" Canvas.Top="198" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="198"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DatePicker FontSize="20" Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="198"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock Text="Địa chỉ" FontSize="20" Canvas.Left="181" Canvas.Top="252" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="252"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox FontSize="20" Height="34" Width="287" RenderTransformOrigin="1.909,3.749" Canvas.Left="344" Canvas.Top="252"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Text="Vai trò" FontSize="20" Canvas.Left="181" Canvas.Top="361"/>
+        <ComboBox Canvas.Left="344" Canvas.Top="361" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="287" VerticalContentAlignment="Center" FontSize="20">
+            <ComboBoxItem  IsSelected="True">Khách hàng</ComboBoxItem>
+            <ComboBoxItem>Nha sĩ</ComboBoxItem>
+            <ComboBoxItem>Nhân viên</ComboBoxItem>
+            <ComboBoxItem>Quản trị viên</ComboBoxItem>
+        </ComboBox>
     </Canvas>
 </Window>

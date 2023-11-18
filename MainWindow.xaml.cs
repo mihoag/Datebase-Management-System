@@ -1,5 +1,6 @@
 ﻿using HospitalManagement.View;
 using HospitalManagement.View.EmployeeSide;
+using HospitalManagement.View.PatientSide;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,10 +28,29 @@ namespace HospitalManagement
             InitializeComponent();
         }
 
+        private string role = "benh nhan";
         private void login(object sender, RoutedEventArgs e)
         {
-            HomeEmployee homeEmployee = new HomeEmployee();
-            homeEmployee.Show();
+            if (role == "benh nhan")
+            {
+                HomePatient homePatient = new HomePatient();
+                homePatient.Show();
+            }
+            else if (role == "quan tri vien")
+            {
+
+            }
+            else if (role == "nhan vien")
+            {
+                HomeEmployee homeEmployee = new HomeEmployee();
+                homeEmployee.Show();
+            }
+            else if (role == "nha si")
+            {
+
+            }
+            else return;
+
             this.Close();
         }
 

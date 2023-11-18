@@ -1,12 +1,17 @@
 ﻿
 
-FF:\HK3_Nam1\Database Management\HospitalManagement\MainWindow.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\DetailPatientRecord.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\HomeEmployee.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\Inform.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\ListFreeTimeDentist.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\PatientRecord.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\setBill.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\Register.xaml;;
-FF:\HK3_Nam1\Database Management\HospitalManagement\View\EmployeeSide\setSchedule.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\MainWindow.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\DetailPatientRecord.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\HomeEmployee.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\Inform.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\ListFreeTimeDentist.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\patientRecord.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\setbill.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\EmployeeSide\setSchedule.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\Register.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\PatientSide\HomePatient.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\PatientSide\setDentistSchedule.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\PatientSide\patientRecordPage.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\PatientSide\PersonalInformation.xaml;;
+FE:\DoAn\DBMS\Datebase-Management-System\View\PatientSide\ViewSchedulePage.xaml;;
 

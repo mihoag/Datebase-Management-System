@@ -21,4 +21,9 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="View\DentistSide\" />
+    <Folder Include="View\AdminSide\" />
+  </ItemGroup>
+
 </Project>
