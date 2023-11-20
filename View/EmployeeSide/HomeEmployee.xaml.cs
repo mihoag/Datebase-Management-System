@@ -58,5 +58,20 @@ namespace HospitalManagement.View.EmployeeSide
             setBillWD.Show();
             this.Close();
         }
+
+        private void showMedicine(object sender, RoutedEventArgs e)
+        {
+            showMedicine showMedicineWD = new showMedicine();
+            showMedicineWD.Show();
+            this.Close();
+        }
+
+        private void personalInfo(object sender, RoutedEventArgs e)
+        {
+            PersonalInformation
+                personalInformationWD = new PersonalInformation();  
+            personalInformationWD.Show();   
+            this.Close();
+        }
     }
 }

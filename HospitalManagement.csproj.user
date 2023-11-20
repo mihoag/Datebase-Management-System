@@ -22,10 +22,16 @@
     <Compile Update="View\EmployeeSide\patientRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\EmployeeSide\PersonalInformation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\EmployeeSide\setbill.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\EmployeeSide\setSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\showMedicine.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\PatientSide\HomePatient.xaml.cs">
@@ -66,10 +72,16 @@
     <Page Update="View\EmployeeSide\patientRecord.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\EmployeeSide\PersonalInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\EmployeeSide\setbill.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\EmployeeSide\setSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\showMedicine.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\PatientSide\HomePatient.xaml">

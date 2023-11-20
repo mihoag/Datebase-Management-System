@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\
 HospitalManagement
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\DoAn\DBMS\Datebase-Management-System\App.xaml
-14106751876
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\App.xaml
+16-1070674205
 
-19-1759893532
-194-2067936865
-MainWindow.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\Inform.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
+21-806878765
+194183970531
+MainWindow.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\Inform.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\PersonalInformation.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\EmployeeSide\showMedicine.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
 
 True
 

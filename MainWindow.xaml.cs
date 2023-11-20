@@ -28,9 +28,10 @@ namespace HospitalManagement
             InitializeComponent();
         }
 
-        private string role = "benh nhan";
+        private string role = "nhan vien";
         private void login(object sender, RoutedEventArgs e)
         {
+          
             if (role == "benh nhan")
             {
                 HomePatient homePatient = new HomePatient();

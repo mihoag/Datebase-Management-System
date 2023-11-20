@@ -8,15 +8,17 @@
         Title="HomeEmployee" Height="490" Width="830">
     <Canvas>
         <Label FontSize="30" FontWeight="Bold" Content="HỆ THỐNG QUẢN LÍ PHÒNG KHÁM NHA KHOA" HorizontalAlignment="Left" Canvas.Left="72" VerticalAlignment="Center"></Label>
-        <Button Content="Đặt lịch khám" Height="72" Width="307" Canvas.Left="29" Canvas.Top="71" FontWeight="Bold" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="setSchedule"></Button>
-        <Button Content="Gửi thông báo" Height="72" Width="307" Canvas.Left="29" Canvas.Top="161" FontWeight="Bold" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="sendInfo"/>
-        <Button Content="Hồ sơ bệnh nhân" Height="72" Width="307" Canvas.Left="29" Canvas.Top="255" FontWeight="Bold" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="patientRecord"/>
-        <Button Content="Lập hóa đơn" Height="72" Width="307" Canvas.Left="29" Canvas.Top="352" FontWeight="Bold" FontSize="25" Click="setBill" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Đặt lịch khám" Height="50" Width="329" Canvas.Left="29" Canvas.Top="62" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="setSchedule"></Button>
+        <Button Content="Gửi thông báo" Height="46" Width="329" Canvas.Left="29" Canvas.Top="136" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="sendInfo"/>
+        <Button Content="Hồ sơ bệnh nhân" Height="46" Width="329" Canvas.Left="29" Canvas.Top="207" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="patientRecord"/>
+        <Button Content="Lập hóa đơn" Height="44" Width="329" Canvas.Left="29" Canvas.Top="276" FontWeight="Bold" FontSize="25" Click="setBill" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Image Source="/Image/user.png" Height="166" Width="171" Canvas.Left="516" Canvas.Top="114" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
         <Label Content="Thông tin nhân viên" Canvas.Left="506" Canvas.Top="70" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
         <Label Content="ID : NV01" Canvas.Left="526" Canvas.Top="291" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Label Content="Họ tên: Lê Minh Hoàng" Canvas.Left="526" Canvas.Top="325" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Button Content="Đăng xuất" Height="36" Width="97" Canvas.Left="693" Canvas.Top="388"  FontSize="20" Click="logout" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Danh mục thuốc" Height="43" Width="329" Canvas.Left="29" Canvas.Top="344" FontWeight="Bold" FontSize="25" Click="showMedicine" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="Thông tin cá nhân" Height="43" Width="329" Canvas.Left="29" Canvas.Top="412" FontWeight="Bold" FontSize="25" Click="personalInfo" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
     </Canvas>
 </Window>
