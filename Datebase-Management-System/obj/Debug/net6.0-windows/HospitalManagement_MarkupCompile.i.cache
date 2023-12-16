@@ -1,0 +1,20 @@
+﻿HospitalManagement
+1.0.0.0
+
+winexe
+C#
+.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\
+HospitalManagement
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\App.xaml
+141080081711
+
+251179147045
+2091987785256
+MainWindow.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\EmployeeSide\showMedicine.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
+
+False
+

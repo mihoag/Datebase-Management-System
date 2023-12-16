@@ -1,0 +1,154 @@
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\DetailPatientRecord.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\HomeEmployee.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\Inform.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\ListFreeTimeDentist.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\PatientRecord.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\setBill.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\Register.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\App.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement_MarkupCompile.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement_MarkupCompile.lref
+F:\HK3_Nam1\Database Management\HospitalManagement\bin\Debug\net6.0-windows\HospitalManagement.exe
+F:\HK3_Nam1\Database Management\HospitalManagement\bin\Debug\net6.0-windows\HospitalManagement.deps.json
+F:\HK3_Nam1\Database Management\HospitalManagement\bin\Debug\net6.0-windows\HospitalManagement.runtimeconfig.json
+F:\HK3_Nam1\Database Management\HospitalManagement\bin\Debug\net6.0-windows\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\bin\Debug\net6.0-windows\HospitalManagement.pdb
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\MainWindow.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\DetailPatientRecord.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\HomeEmployee.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\Inform.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\ListFreeTimeDentist.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\PatientRecord.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\setBill.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\Register.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.g.resources
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.GeneratedMSBuildEditorConfig.editorconfig
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.AssemblyInfoInputs.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.AssemblyInfo.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.csproj.CoreCompileInputs.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\refint\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.pdb
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\HospitalManagement.genruntimeconfig.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\ref\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\setSchedule.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\obj\Debug\net6.0-windows\View\EmployeeSide\setSchedule.baml
+E:\DoAn\DBMS\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.exe
+E:\DoAn\DBMS\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.deps.json
+E:\DoAn\DBMS\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.runtimeconfig.json
+E:\DoAn\DBMS\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.dll
+E:\DoAn\DBMS\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.pdb
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\DetailPatientRecord.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\HomeEmployee.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\Inform.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\ListFreeTimeDentist.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\patientRecord.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setbill.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setSchedule.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\Register.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\App.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement_MarkupCompile.cache
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement_MarkupCompile.lref
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\MainWindow.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\DetailPatientRecord.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\HomeEmployee.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\Inform.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\ListFreeTimeDentist.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\patientRecord.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setbill.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setSchedule.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\Register.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.g.resources
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.GeneratedMSBuildEditorConfig.editorconfig
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.AssemblyInfoInputs.cache
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.AssemblyInfo.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.csproj.CoreCompileInputs.cache
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.dll
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\refint\HospitalManagement.dll
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.pdb
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.genruntimeconfig.cache
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\ref\HospitalManagement.dll
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\HomePatient.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\HomePatient.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\setDentistSchedule.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\setDentistSchedule.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\patientRecordPage.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\patientRecordPage.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\PersonalInformation.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\PersonalInformation.baml
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\ViewSchedulePage.g.cs
+E:\DoAn\DBMS\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\ViewSchedulePage.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.exe
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.deps.json
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.runtimeconfig.json
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.pdb
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\DetailPatientRecord.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\HomeEmployee.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\ListFreeTimeDentist.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\patientRecord.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setbill.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setSchedule.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\HomePatient.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\patientRecordPage.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\PersonalInformation.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\setDentistSchedule.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\ViewSchedulePage.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\Register.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\App.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement_MarkupCompile.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement_MarkupCompile.lref
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\MainWindow.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\DetailPatientRecord.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\HomeEmployee.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\ListFreeTimeDentist.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\patientRecord.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setbill.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\setSchedule.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\HomePatient.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\patientRecordPage.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\PersonalInformation.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\setDentistSchedule.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\PatientSide\ViewSchedulePage.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\Register.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.g.resources
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.GeneratedMSBuildEditorConfig.editorconfig
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.AssemblyInfoInputs.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.AssemblyInfo.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.csproj.CoreCompileInputs.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\refint\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.pdb
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.genruntimeconfig.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\ref\HospitalManagement.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\showMedicine.g.cs
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\showMedicine.baml
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.csproj.AssemblyReference.cache
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Azure.Core.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Azure.Identity.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\System.Memory.Data.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\HK3_Nam1\Database Management\HospitalManagement\Datebase-Management-System\obj\Debug\net6.0-windows\HospitalManagement.csproj.CopyComplete

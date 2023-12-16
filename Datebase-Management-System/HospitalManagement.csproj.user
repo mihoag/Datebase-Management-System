@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\EmployeeSide\DetailPatientRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\HomeEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\ListFreeTimeDentist.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\patientRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\setbill.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\setSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EmployeeSide\showMedicine.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\HomePatient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\patientRecordPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\PersonalInformation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\setDentistSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientSide\ViewSchedulePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Register.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\EmployeeSide\DetailPatientRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\HomeEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\ListFreeTimeDentist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\patientRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\setbill.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\setSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\showMedicine.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\HomePatient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\patientRecordPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\PersonalInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\setDentistSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientSide\ViewSchedulePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Register.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
