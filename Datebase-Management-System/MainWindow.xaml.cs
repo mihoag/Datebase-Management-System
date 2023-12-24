@@ -1,4 +1,5 @@
 ﻿using HospitalManagement.View;
+using HospitalManagement.View.AdminSide;
 using HospitalManagement.View.EmployeeSide;
 using HospitalManagement.View.PatientSide;
 using System;
@@ -28,7 +29,7 @@ namespace HospitalManagement
             InitializeComponent();
         }
 
-        private string role = "benh nhan";
+        private string role = "quan tri vien";
         private void login(object sender, RoutedEventArgs e)
         {
           
@@ -39,7 +40,8 @@ namespace HospitalManagement
             }
             else if (role == "quan tri vien")
             {
-
+                HomePage homeAdmin = new HomePage();
+                homeAdmin.Show();
             }
             else if (role == "nhan vien")
             {

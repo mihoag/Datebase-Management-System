@@ -234,3 +234,148 @@ declare @check int
 exec @check =  sp_DATLICHKHAM  'NS002', 'BN002',  'NULL', '2025-9-11', '8:30:00', '9:00:00'
 print @check
 go
+
+
+
+--- (Quan tri vien)
+--- sp_addNewAccount: them tai khoan moi
+--- input: @DIENTHOAI CHAR(10),	@MATKHAU NCHAR(20), @VAITRO NCHAR(20), @HOTEN NVARCHAR(50)
+--- output: 
+
+create or alter proc sp_addNewAccount @DIENTHOAI CHAR(10),@MATKHAU NCHAR(20),@VAITRO NCHAR(20),@HOTEN NVARCHAR(50)
+as
+begin
+	if (LEN(@DIENTHOAI) != 10)
+	begin
+		raiserror(N'Số điện thoại phải có độ dài là 10', 16, 1);
+		return
+	end
+	if (LEN(@HOTEN) <= 0)
+	begin
+		raiserror(N'Họ tên không được để trống', 16, 1);
+		return
+	end
+	if (LEN(@MATKHAU) <= 0)
+	begin
+		raiserror(N'Mật khẩu không được để trống', 16, 1);
+		return
+	end
+	if (exists (select * from NGUOI_DUNG where DIENTHOAI = @DIENTHOAI))
+	begin
+		raiserror(N'Số điện thoại này đã tồn tại', 16, 1);
+		return
+	end
+	-- tao id nguoi dung
+	declare @id_user nchar(5)
+	if @VAITRO = 'NHA SI'
+	begin
+		set @id_user = (select Max(ID_NS) from NHA_SI)
+		if @id_user is null
+		begin
+			set @id_user = 'NS001'
+		end
+		else
+		begin
+			 set @id_user = (select 'NS'  + REPLACE(str((CAST(substring(max(@id_user),3,3) as int) + 1) ,3), ' ', '0')
+                     from NHA_SI)
+		end
+		INSERT INTO NGUOI_DUNG(ID_USER, DIENTHOAI, MATKHAU, VAITRO) VALUES
+		(@id_user, @DIENTHOAI, @MATKHAU, @VAITRO);
+		INSERT INTO NHA_SI (ID_NS, HOTEN) VALUES(@id_user, @HOTEN);
+	end
+	else
+	begin
+		set @id_user = (select Max(ID_NV) from NHAN_VIEN)
+		if @id_user is null
+		begin
+			set @id_user = 'NV001'
+		end
+		else
+		begin
+			 set @id_user = (select 'NV'  + REPLACE(str((CAST(substring(max(@id_user),3,3) as int) + 1) ,3), ' ', '0')
+                     from NHAN_VIEN)
+		end
+		INSERT INTO NGUOI_DUNG(ID_USER, DIENTHOAI, MATKHAU, VAITRO) VALUES
+		(@id_user, @DIENTHOAI, @MATKHAU, @VAITRO);
+		INSERT INTO NHAN_VIEN (ID_NV, HOTEN) VALUES	(@id_user, @HOTEN);
+	end
+end
+go
+
+exec sp_addNewAccount '0133456789', '1234', 'NHA SI', N'Nguyễn Thành Nhân'
+go
+
+--- (Quan tri vien)
+--- sp_getAllAccount: lay tat ca account (nhan vien, nguoi dung, bac si)
+--- input: None
+--- output: list
+create or alter proc sp_getAllAccount 
+as
+begin
+	select ID_USER, DIENTHOAI, HOTEN, VAITRO, ACTIVE from NGUOI_DUNG ng, KHACH_HANG kh WHERE VAITRO != 'QUAN TRI VIEN' and ng.ID_USER = kh.ID_KH
+	union
+	select ID_USER, DIENTHOAI, HOTEN, VAITRO, ACTIVE from NGUOI_DUNG ng, NHAN_VIEN nv WHERE VAITRO != 'QUAN TRI VIEN' and ng.ID_USER = nv.ID_NV
+	union
+	select ID_USER, DIENTHOAI, HOTEN, VAITRO, ACTIVE from NGUOI_DUNG ng, NHA_SI ns WHERE VAITRO != 'QUAN TRI VIEN' and ng.ID_USER = ns.ID_NS
+end
+go
+
+exec sp_getAllAccount 
+go
+--- (Quan tri vien)
+--- sp_searchUser: search nguoi dung
+--- input: @search nvarchar(10)
+--- output: list
+create or alter proc sp_searchUser @search nvarchar(10)
+as
+begin
+	select ID_USER, DIENTHOAI, HOTEN, VAITRO, ACTIVE from NGUOI_DUNG ng, KHACH_HANG kh WHERE VAITRO != 'QUAN TRI VIEN' and ng.ID_USER = kh.ID_KH and DIENTHOAI like ('%'+@search+'%')
+	union
+	select ID_USER, DIENTHOAI, HOTEN, VAITRO, ACTIVE from NGUOI_DUNG ng, NHAN_VIEN nv WHERE VAITRO != 'QUAN TRI VIEN' and ng.ID_USER = nv.ID_NV and DIENTHOAI like ('%'+@search+'%')
+	union
+	select ID_USER, DIENTHOAI, HOTEN, VAITRO, ACTIVE from NGUOI_DUNG ng, NHA_SI ns WHERE VAITRO != 'QUAN TRI VIEN' and ng.ID_USER = ns.ID_NS and DIENTHOAI like ('%'+@search+'%')
+end
+go
+
+exec sp_searchUser '01234567'
+go
+
+--- (Quan tri vien)
+--- sp_lockAccount: khoa tai khoan
+--- input: @id_user NCHAR(5)
+--- output: none
+create or alter proc sp_lockAccount @id_user NCHAR(5)
+as
+BEGIN
+	if (not exists (SELECT * FROM NGUOI_DUNG WHERE ID_USER = @id_user))
+	begin
+		raiserror('Người dùng không tồn tại', 16, 1)
+		return 0
+	end
+	UPDATE NGUOI_DUNG SET ACTIVE = 0 WHERE ID_USER = @id_user
+	return 1
+END
+go
+
+exec sp_lockAccount 'BN001'
+go
+
+--- (Quan tri vien)
+--- sp_activeAccount: mo khoa tai khoan
+--- input: @id_user NCHAR(5)
+--- output: none
+create or alter proc sp_activeAccount @id_user NCHAR(5)
+as
+BEGIN
+	if (not exists (SELECT * FROM NGUOI_DUNG WHERE ID_USER = @id_user))
+	begin
+		raiserror('Người dùng không tồn tại', 16, 1)
+		return 0
+	end
+	UPDATE NGUOI_DUNG SET ACTIVE = 1 WHERE ID_USER = @id_user
+	return 1
+END
+go
+
+exec sp_activeAccount 'BN001'
+go

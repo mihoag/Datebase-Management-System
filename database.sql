@@ -15,6 +15,7 @@ CREATE TABLE NGUOI_DUNG
 	DIENTHOAI CHAR(10),
 	MATKHAU NCHAR(20),
 	VAITRO NCHAR(20),
+	ACTIVE bit default 1,
 	PRIMARY KEY (ID_USER)
 )
 
@@ -293,12 +294,12 @@ INSERT INTO LICH_NHA_SI(ID_NS,NGAYHEN,GIO_BD,GIO_KT,CHITIET) VALUES
 
 -- Bang Thuoc
 INSERT INTO THUOC(ID_THUOC,TENTHUOC,DONVITINH,CHIDINH,TONKHO,NGAYHETHAN,DONGIA,ID_QTV) VALUES 
-('T0001','Paracetamol',N'Hộp',N'Thuốc không dùng với người dị ứng',100,'2024-12-12',100000,'QTV01'),
-('T0002','Panadol',N'Hộp',N'Thuốc không dùng với người dị ứng',100,'2024-1-12',100000,'QTV02'),
-('T0003','Betadine',N'Chai',N'Thuốc không dùng với người dị ứng',100,'2025-10-12',50000,'QTV01'),
-('T0004','Oresol',N'Chai',N'Thuốc không dùng với người dị ứng',100,'2025-11-12',30000,'QTV02'),
-('T0005','Salonpas',N'Viên',N'Thuốc không dùng với người dị ứng da',100,'2024-12-30',5000,'QTV01'),
-('T0006','Betadine',N'Chai',N'Thuốc không dùng với người dị ứng',100,'2026-02-20',30000,'QTV02');
+('T0001','Novocain',N'Hộp',N'Thuốc không dùng với người dị ứng',100,'2024-12-12',100000,'QTV01'),
+('T0002','Paracetamol',N'Hộp',N'Thuốc không dùng với người dị ứng',100,'2024-1-12',100000,'QTV02'),
+('T0003','Aspirin',N'Chai',N'Thuốc không dùng với người dị ứng',100,'2025-10-12',50000,'QTV01'),
+('T0004','Amoxillin',N'Chai',N'Thuốc không dùng với người dị ứng',100,'2025-11-12',30000,'QTV02'),
+('T0005','Acyclovir',N'Viên',N'Thuốc không dùng với người dị ứng da',100,'2024-12-30',5000,'QTV01'),
+('T0006','Pilocarpin',N'Chai',N'Thuốc không dùng với người dị ứng',100,'2026-02-20',30000,'QTV02');
 
 -- bang Dich vu
 INSERT INTO DICH_VU(ID_DV, TENDV, DONGIA) VALUES
@@ -312,7 +313,7 @@ INSERT INTO DICH_VU(ID_DV, TENDV, DONGIA) VALUES
 -- bang ho so benh nhan
 INSERT INTO HS_BENH_NHAN(ID_BN, ID_KH) VALUES ('HS001', 'BN001');
 -- bang Chi tiet ho so benh nhan
-INSERT INTO CHI_TIET_HS(ID_BN,NGAYKHAM,TINHTRANG,NGUOIKHAM)VALUES('HS001','2023-12-18',N'Ho có đàm, sốt cao','NS001');
+INSERT INTO CHI_TIET_HS(ID_BN,NGAYKHAM,TINHTRANG,NGUOIKHAM)VALUES('HS001','2023-12-18',N'Đau, nhứt răng','NS001');
 -- bang Don thuoc
 INSERT INTO DON_THUOC(ID_THUOC,ID_BN,NGAYKHAM,SOLUONG)VALUES('T0001','HS001','2023-12-18',1);
 INSERT INTO DON_THUOC(ID_THUOC,ID_BN,NGAYKHAM,SOLUONG)VALUES('T0002','HS001','2023-12-18',2);
@@ -327,7 +328,7 @@ INSERT INTO HOA_DON(ID_HOADON,ID_BN,NGAYKHAM,PHIKHAM,THANHTIEN,ID_NV,ID_KH)VALUE
 -- bang ho so benh nhan
 INSERT INTO HS_BENH_NHAN(ID_BN, ID_KH) VALUES ('HS002', 'BN002');
 -- bang Chi tiet ho so benh nhan
-INSERT INTO CHI_TIET_HS(ID_BN,NGAYKHAM,TINHTRANG,NGUOIKHAM)VALUES('HS002','2023-12-18',N'Ho có đàm, sốt cao','NS002');
+INSERT INTO CHI_TIET_HS(ID_BN,NGAYKHAM,TINHTRANG,NGUOIKHAM)VALUES('HS002','2023-12-18',N'Đau, nhứt răng','NS002');
 -- bang Don thuoc
 INSERT INTO DON_THUOC(ID_THUOC,ID_BN,NGAYKHAM,SOLUONG)VALUES('T0001','HS002','2023-12-18',2);
 INSERT INTO DON_THUOC(ID_THUOC,ID_BN,NGAYKHAM,SOLUONG)VALUES('T0002','HS002','2023-12-18',2);
@@ -341,7 +342,7 @@ INSERT INTO HOA_DON(ID_HOADON,ID_BN,NGAYKHAM,PHIKHAM,THANHTIEN,ID_NV,ID_KH)VALUE
 
 ----------------------------- Kham benh 3-------------------------
 -- bang Chi tiet ho so benh nhan
-INSERT INTO CHI_TIET_HS(ID_BN,NGAYKHAM,TINHTRANG,NGUOIKHAM)VALUES('HS001','2023-12-20',N'Ho có đàm, sốt cao','NS002');
+INSERT INTO CHI_TIET_HS(ID_BN,NGAYKHAM,TINHTRANG,NGUOIKHAM)VALUES('HS001','2023-12-20',N'Đau, nhứt răng','NS002');
 -- bang Don thuoc
 INSERT INTO DON_THUOC(ID_THUOC,ID_BN,NGAYKHAM,SOLUONG)VALUES('T0001','HS001','2023-12-20',2);
 INSERT INTO DON_THUOC(ID_THUOC,ID_BN,NGAYKHAM,SOLUONG)VALUES('T0002','HS001','2023-12-20',2);

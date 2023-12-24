@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DoAn\\HQTCSDL\\Datebase-Management-System-master\\Datebase-Management-System-master\\Datebase-Management-System\\HospitalManagement.csproj": {}
+    "E:\\DoAn\\HQTCSDL\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {}
   },
   "projects": {
-    "E:\\DoAn\\HQTCSDL\\Datebase-Management-System-master\\Datebase-Management-System-master\\Datebase-Management-System\\HospitalManagement.csproj": {
+    "E:\\DoAn\\HQTCSDL\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DoAn\\HQTCSDL\\Datebase-Management-System-master\\Datebase-Management-System-master\\Datebase-Management-System\\HospitalManagement.csproj",
+        "projectUniqueName": "E:\\DoAn\\HQTCSDL\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
         "projectName": "HospitalManagement",
-        "projectPath": "E:\\DoAn\\HQTCSDL\\Datebase-Management-System-master\\Datebase-Management-System-master\\Datebase-Management-System\\HospitalManagement.csproj",
+        "projectPath": "E:\\DoAn\\HQTCSDL\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
         "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-        "outputPath": "E:\\DoAn\\HQTCSDL\\Datebase-Management-System-master\\Datebase-Management-System-master\\Datebase-Management-System\\obj\\",
+        "outputPath": "E:\\DoAn\\HQTCSDL\\Datebase-Management-System\\Datebase-Management-System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

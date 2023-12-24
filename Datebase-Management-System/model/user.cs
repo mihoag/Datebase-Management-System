@@ -13,6 +13,10 @@ namespace HospitalManagement.model
         public string HOTEN { get; set; }
         public string NGAYSINH { get; set;}
         public string DIACHI { get; set; }
+        public string MATKHAU { get; set; }
+        public string VAITRO { get; set; }
+        public string ID_USER { get; set; }
+        public string ACTIVE { get; set; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
     }
