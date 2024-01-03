@@ -24,7 +24,7 @@ namespace HospitalManagement.View.PatientSide
     /// </summary>
     public partial class setDentistSchedule : Window
     {
-        private BindingList<dentisSchedule> listSchedule { get; set; } = new BindingList<dentisSchedule>();
+        private BindingList<dentistSchedule> listSchedule { get; set; } = new BindingList<dentistSchedule>();
         public setDentistSchedule()
         {
             InitializeComponent();
@@ -55,7 +55,7 @@ namespace HospitalManagement.View.PatientSide
                                     string CHITIET = reader["CHITIET"].ToString();
 
 
-                                    dentisSchedule d = new dentisSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
+                                    dentistSchedule d = new dentistSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
                                     listSchedule.Add(d);
                                 }
                             }

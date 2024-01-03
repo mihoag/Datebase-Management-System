@@ -72,6 +72,30 @@
     <Page Update="View\AdminSide\HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\DentistSide\DentistSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\DetailPatientRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\HomeDentist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\patientRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\PersonalInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\keDon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\setSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DentistSide\showMedicine.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\EmployeeSide\DetailPatientRecord.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\DoAn\HQTCSDL\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\
 HospitalManagement
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\DoAn\HQTCSDL\Datebase-Management-System\Datebase-Management-System\App.xaml
-19-546943367
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\App.xaml
+27614348623
 
-33-1873578522
-2101454422357
-MainWindow.xaml;View\AdminSide\AccountHandlerPage.xaml;View\AdminSide\addAcountPage.xaml;View\AdminSide\HomePage.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\EmployeeSide\showMedicine.xaml;View\PatientSide\detailPatientRecord.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\setDentistSchedule2.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
+42-631706173
+21045926026
+MainWindow.xaml;View\AdminSide\AccountHandlerPage.xaml;View\AdminSide\addAcountPage.xaml;View\AdminSide\HomePage.xaml;View\DentistSide\DentistSchedule.xaml;View\DentistSide\DetailPatientRecord.xaml;View\DentistSide\HomeDentist.xaml;View\DentistSide\keDon.xaml;View\DentistSide\patientRecord.xaml;View\DentistSide\PersonalInformation.xaml;View\DentistSide\setSchedule.xaml;View\DentistSide\showMedicine.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\EmployeeSide\showMedicine.xaml;View\PatientSide\detailPatientRecord.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\setDentistSchedule2.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
 
 False
 

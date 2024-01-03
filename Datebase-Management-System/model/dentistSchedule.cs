@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HospitalManagement.model
 {
-    public class dentisSchedule : INotifyPropertyChanged, ICloneable
+    public class dentistSchedule : INotifyPropertyChanged, ICloneable
     {
 
         public string ID_NS {  get; set; }

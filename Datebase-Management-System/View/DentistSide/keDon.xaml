@@ -1,0 +1,109 @@
+﻿<Window
+    x:Class="HospitalManagement.View.DentistSide.keDon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HospitalManagement.View.DentistSide"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Kê Đơn Thuốc"
+    Width="850"
+    Height="550"
+    Loaded="MainLoad"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Canvas>
+        <Label
+            Canvas.Left="179"
+            Canvas.Top="29"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="KÊ ĐƠN THUỐC CHO BỆNH NHÂN"
+            FontSize="30"
+            FontWeight="Bold" />
+        <TextBlock
+            Canvas.Left="205"
+            Canvas.Top="104"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"><Run Text="ID bệnh nhân" /><LineBreak /><Run /></TextBlock>
+        <TextBlock
+            Canvas.Left="205"
+            Canvas.Top="155"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Text="ID thuốc" />
+        <TextBox
+            Canvas.Left="368"
+            Canvas.Top="104"
+            Width="287"
+            Height="34"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="1.909,3.749"
+            Text="{Binding id_bn, Mode=TwoWay}" />
+        <TextBox
+            Canvas.Left="368"
+            Canvas.Top="148"
+            Width="287"
+            Height="34"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            RenderTransformOrigin="1.909,3.749"
+            Text="{Binding id_thuoc, Mode=TwoWay}" />
+        <Button
+            Canvas.Left="264"
+            Canvas.Top="386"
+            Width="301"
+            Height="38"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Export"
+            Content="Kê đơn"
+            FontSize="20"
+            RenderTransformOrigin="0.628,1.634" />
+        <TextBlock
+            Canvas.Left="214"
+            Canvas.Top="213"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Text="Ngày khám" />
+        <Button
+            Canvas.Left="697"
+            Canvas.Top="386"
+            Width="82"
+            Height="38"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="back"
+            Content="Back"
+            FontSize="20"
+            RenderTransformOrigin="0.628,1.634" />
+        <TextBlock
+            Canvas.Left="216"
+            Canvas.Top="267"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"><Run Text="Số lượng" /><LineBreak /><Run /></TextBlock>
+        <TextBox
+            Canvas.Left="372"
+            Canvas.Top="277"
+            Width="287"
+            Height="34"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="1.909,3.749"
+            Text="{Binding soluong, Mode=TwoWay}" />
+        <TextBox
+            Canvas.Left="372"
+            Canvas.Top="209"
+            Width="287"
+            Height="34"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            RenderTransformOrigin="1.909,3.749"
+            Text="{Binding ngaykham, Mode=TwoWay}"
+            />
+    </Canvas>
+</Window>

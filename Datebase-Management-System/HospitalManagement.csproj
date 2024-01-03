@@ -22,12 +22,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View\DentistSide\" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
-    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+    <Compile Update="View\DentistSide\DetailPatientRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DentistSide\patientRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DentistSide\keDon.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DentistSide\setSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DentistSide\showMedicine.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

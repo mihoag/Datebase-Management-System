@@ -18,11 +18,11 @@ namespace HospitalManagement.View.EmployeeSide
         {
             InitializeComponent();
         }
-        public BindingList<dentisSchedule> listSchedule;
+        public BindingList<dentistSchedule> listSchedule;
 
         private void MainLoad(object sender, RoutedEventArgs e)
         {
-            listSchedule = new BindingList<dentisSchedule>();
+            listSchedule = new BindingList<dentistSchedule>();
             loadAllSchedule();
             ComboboxSchedule.ItemsSource = listSchedule;
         }
@@ -59,7 +59,7 @@ namespace HospitalManagement.View.EmployeeSide
 
                                     //MessageBox.Show(ID_NHASI);
 
-                                    dentisSchedule d = new dentisSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
+                                    dentistSchedule d = new dentistSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
                                     listSchedule.Add(d);                                }
                             }
                         }
@@ -114,7 +114,7 @@ namespace HospitalManagement.View.EmployeeSide
 
                                         //MessageBox.Show(ID_NHASI);
 
-                                        dentisSchedule d = new dentisSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
+                                        dentistSchedule d = new dentistSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
                                         listSchedule.Add(d);
                                     }
                                 }
