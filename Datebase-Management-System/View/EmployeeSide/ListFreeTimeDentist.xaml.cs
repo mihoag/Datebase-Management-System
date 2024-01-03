@@ -28,7 +28,7 @@ namespace HospitalManagement.View.EmployeeSide
         }
         private void back(object sender, RoutedEventArgs e)
         {
-            HomeEmployee homeEmployee = new HomeEmployee();
+            HomeEmployee homeEmployee = new HomeEmployee(HomeEmployee.id_nv);
             homeEmployee.Show();
             this.Close();   
         }

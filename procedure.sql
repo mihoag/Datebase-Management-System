@@ -207,6 +207,7 @@ BEGIN
 	   end
    -- cap nhat lai lich hen cua nha si
    insert into LICH_NHA_SI (ID_NS, NGAYHEN, GIO_BD, GIO_KT, CHITIET) values (@id_ns, @ngayhen, @gio_bd, @gio_kt, NULL)
+   WAITFOR DELAY '0:0:05'
    if @gio_bd between '11:00:00' and '13:30:00'
      begin
 	    print N'Khung giờ khám không hợp lệ'

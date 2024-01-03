@@ -31,7 +31,7 @@ namespace HospitalManagement.View.DentistSide
 
         public DentistSchedule()
         {
-            idNS = "NS001";
+            //idNS = "NS001";
             InitializeComponent();
 
         }
@@ -39,13 +39,14 @@ namespace HospitalManagement.View.DentistSide
         private void MainLoad(object sender, RoutedEventArgs e)
         {
             listSchedule = new BindingList<dentistSchedule>();
-            loadAllSchedule(idNS, null);
+            //MessageBox.Show(HomeDentist.ID_dentist);
+            loadAllSchedule(HomeDentist.ID_dentist, null);
             ComboboxSchedule.ItemsSource = listSchedule;
         }
 
         private void back(object sender, RoutedEventArgs e)
         {
-            HomeDentist homeDentist = new HomeDentist();
+            HomeDentist homeDentist = new HomeDentist(HomeDentist.ID_dentist);
             homeDentist.Show();
             this.Close();
         }
@@ -64,18 +65,11 @@ namespace HospitalManagement.View.DentistSide
             {
                 using (SqlConnection connection = DB.Instance.Connection)
                 {
-                    using (SqlCommand cmd = new SqlCommand("sp_LICHNHASI", connection))
+                    using (SqlCommand cmd = new SqlCommand("sp_XEMLICHNHASI_Error", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@id_ns", id_ns);
-                        if (ngayhen != null)
-                        {
-                            cmd.Parameters.AddWithValue("@ngayhen", ngayhen);
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@ngayhen", DBNull.Value);
-                        }
+                      
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             // Check if the reader has rows
@@ -89,9 +83,7 @@ namespace HospitalManagement.View.DentistSide
                                     string GIOBD = reader["GIO_BD"].ToString();
                                     string GIOKT = reader["GIO_KT"].ToString();
                                     string CHITIET = reader["CHITIET"].ToString();
-
                                     //MessageBox.Show(ID_NHASI);
-
                                     dentistSchedule d = new dentistSchedule() { ID_NS = ID_NHASI, NGAYHEN = NGAYHEN, GIO_BD = GIOBD, GIO_KT = GIOKT, CHITIET = CHITIET };
                                     listSchedule.Add(d);
                                 }

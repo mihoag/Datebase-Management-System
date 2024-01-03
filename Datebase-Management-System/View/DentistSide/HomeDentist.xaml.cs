@@ -19,13 +19,13 @@ namespace HospitalManagement.View.DentistSide
     /// </summary>
     public partial class HomeDentist : Window
     {
-        public HomeDentist()
+        public static string ID_dentist;
+        public HomeDentist(string ID)
         {
+            ID_dentist = ID;
             InitializeComponent();
         }
 
-        
-        
         private void checkSchedule(object sender, RoutedEventArgs e)
         {
             DentistSchedule dentistSchedule = new DentistSchedule();

@@ -2,6 +2,11 @@
 go
 
 
+-- select nguoi dung boi usernam
+create proc getUser @sdt CHAR(10)
+as
+   select * from NGUOI_DUNG where DIENTHOAI = @sdt
+go
 -- (LICH NHA SI)
 -- sp_LICHNHASI: lay lich cua 1 nha si
 -- input: @id_ns NCHAR(5), @ngayhen DATE
@@ -204,3 +209,18 @@ BEGIN TRAN
 COMMIT TRAN
 RETURN 0
 GO
+
+select * from NGUOI_DUNG
+select * from NHA_SI
+
+delete from NHA_SI where ID_NS = 'NS002'
+select * from LICH_NHA_SI
+delete from LICH_NHA_SI where ID_NS ='NS002' 
+select * from LICH_KHAM
+delete from LICH_KHAM where ID_LICHHEN = 'LH013'
+select * from NHAN_VIEN
+delete from NHAN_VIEN where ID_NV = 'USER6'
+delete  from NHAN_VIEN 
+delete from NGUOI_DUNG where ID_USER = 'USER1'
+update NGUOI_DUNG set DIENTHOAI  = '0123456780' where ID_USER = 'NV001'
+update NGUOI_DUNG set MATKHAU  = 'minhhoang' where ID_USER = 'NV001'

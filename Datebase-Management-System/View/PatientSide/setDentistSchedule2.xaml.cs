@@ -58,14 +58,12 @@ namespace HospitalManagement.View.PatientSide
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@id_ns", ps.ID_NS);
-                        cmd.Parameters.AddWithValue("@id_kh", "BN001");
+                        cmd.Parameters.AddWithValue("@id_kh", HomePatient.id_patient);
                         cmd.Parameters.AddWithValue("@id_nv", Convert.DBNull);
                         cmd.Parameters.AddWithValue("@ngayhen", ps.NGAYHEN);
                         cmd.Parameters.AddWithValue("@gio_bd", ps.GIO_BD);
                         cmd.Parameters.AddWithValue("@gio_kt", ps.GIO_KT);
-
                         Object check = cmd.ExecuteScalar();
-
                         // back
                         setDentistSchedule setDentistSchedule = new setDentistSchedule();
                         setDentistSchedule.Show();

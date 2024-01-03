@@ -20,8 +20,10 @@ namespace HospitalManagement.View.PatientSide
     /// </summary>
     public partial class HomePatient : Window
     {
-        public HomePatient()
+        public static string id_patient;
+        public HomePatient(string id)
         {
+            id_patient = id;
             InitializeComponent();
         }
 

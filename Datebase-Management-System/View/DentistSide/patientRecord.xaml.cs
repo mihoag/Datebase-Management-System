@@ -75,7 +75,7 @@ namespace HospitalManagement.View.DentistSide
 
         private void back(object sender, RoutedEventArgs e)
         {
-            HomeDentist homeDentist = new HomeDentist();
+            HomeDentist homeDentist = new HomeDentist(HomeDentist.ID_dentist);
             homeDentist.Show();
             this.Close();
         }

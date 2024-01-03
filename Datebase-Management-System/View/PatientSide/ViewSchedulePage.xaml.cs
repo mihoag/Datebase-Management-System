@@ -72,7 +72,7 @@ namespace HospitalManagement.View.PatientSide
 
         private void btnBack(object sender, RoutedEventArgs e)
         {
-            HomePatient homePatient = new HomePatient();
+            HomePatient homePatient = new HomePatient(HomePatient.id_patient);
             homePatient.Show();
             this.Close();
         }

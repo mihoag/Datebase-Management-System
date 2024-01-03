@@ -19,8 +19,10 @@ namespace HospitalManagement.View.EmployeeSide
     /// </summary>
     public partial class HomeEmployee : Window
     {
-        public HomeEmployee()
+        public static  string id_nv;
+        public HomeEmployee(string id)
         {
+            id_nv = id;
             InitializeComponent();
         }
 
