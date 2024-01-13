@@ -9,6 +9,7 @@ namespace HospitalManagement.model
 {
     public class bill : ICloneable, INotifyPropertyChanged
     {
+        public string id_hd { get; set; }
         public string id_bn { get; set; }
         public string ngaykham { get; set; }
         public int phikham { get; set; }

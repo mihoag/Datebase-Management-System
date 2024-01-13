@@ -24,6 +24,7 @@ namespace HospitalManagement.View.AdminSide
     /// </summary>
     public partial class HomePage : Window
     {
+        private bool fixErr = false;
         public HomePage()
         {
             InitializeComponent();
@@ -92,6 +93,27 @@ namespace HospitalManagement.View.AdminSide
             MedicinePage page = new MedicinePage();
             page.Show();
             this.Close();
+        }
+
+        private void bill_Btn(object sender, RoutedEventArgs e)
+        {
+            showBill page = new showBill();
+            page.FixError = fixErr;
+            page.Show();
+            this.Close();
+        }
+
+        private void fix_click(object sender, RoutedEventArgs e)
+        {
+            fixErr = !fixErr;
+            if (fixErr)
+            {
+                errorBtn.Content = "Tắt fix lỗi";
+            }
+            else
+            {
+                errorBtn.Content = "Bật fix lỗi";
+            }
         }
     }
 }

@@ -11,12 +11,14 @@
         <Label FontSize="30" FontWeight="Bold" Content="HỆ THỐNG QUẢN LÍ PHÒNG KHÁM NHA KHOA" HorizontalAlignment="Left" Canvas.Left="72" VerticalAlignment="Center"></Label>
         <Button Content="Tạo tài khoản" Height="79" Width="329" Canvas.Left="32" Canvas.Top="88" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="AddAccount_click"></Button>
 
-        <Button Content="Quản lý tài khoản" Height="82" Width="329" Canvas.Left="32" Canvas.Top="210" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="accountHandler_Click"/>
+        <Button Content="Quản lý tài khoản" Height="82" Width="329" Canvas.Left="32" Canvas.Top="185" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="accountHandler_Click"/>
         <Image Source="/Image/user.png" Height="166" Width="171" Canvas.Left="516" Canvas.Top="114" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
         <Label Content="Thông tin nhân viên" Canvas.Left="506" Canvas.Top="70" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
         <Label Content="ID : NV01" Canvas.Left="526" Canvas.Top="291" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Name="idLB"/>
         <Label Content="Họ tên: Bùi Minh Duy" Canvas.Left="526" Canvas.Top="325" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Name="nameLB"/>
         <Button Content="Đăng xuất" Height="36" Width="97" Canvas.Left="693" Canvas.Top="388"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="logout"/>
-        <Button Content="Quản lý thuốc" Height="85" Width="329" Canvas.Left="32" Canvas.Top="335" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="medicine_Btn"/>
+        <Button Content="Quản lý thuốc" Height="85" Width="329" Canvas.Left="32" Canvas.Top="290" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="medicine_Btn"/>
+        <Button Content="Xem hoá đơn" Height="85" Width="329" Canvas.Left="32" Canvas.Top="406" FontWeight="Bold" FontSize="25" Click="bill_Btn" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Height="40" Width="120" Canvas.Left="386" Canvas.Top="428" FontSize="20"  Content="Bật fix lỗi" RenderTransformOrigin="0.628,1.634" Click="fix_click" x:Name="errorBtn" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </Window>

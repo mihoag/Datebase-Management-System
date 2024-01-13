@@ -57,6 +57,11 @@ namespace HospitalManagement.View.EmployeeSide
             this.Close();
         }
 
-       
+        private void deleteBill(object sender, RoutedEventArgs e)
+        {
+            deleteBill deleteBill = new deleteBill();
+            deleteBill.Show();
+            this.Close();
+        }
     }
 }

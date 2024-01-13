@@ -247,3 +247,27 @@ exec sp_LHNS_ID 'NS001'
 exec p_DATLICHKHAM 'LH006', 'NS004', 'BN004', null, '2023-11-11', '8:30:00', '9:00:00'
 
 select * from LICH_KHAM
+
+
+--store procedure xoá 1 hoá đơn
+CREATE OR ALTER PROC sp_XOAHOADON
+	@id_hoadon NCHAR(5)
+AS
+BEGIN TRAN
+	-- Kiểm tra id_hoadon có tồn tại hay không
+	IF NOT EXISTS(SELECT * FROM HOA_DON WHERE ID_HOADON = @id_hoadon)
+		BEGIN
+			RAISERROR(N'ID hoá đơn này không tồn tại', 16, 1)
+			ROLLBACK TRAN 
+			RETURN 1
+		END
+
+    -- Xóa hoá đơn
+	DELETE FROM HOA_DON WHERE ID_HOADON = @id_hoadon
+	PRINT N'Xoá hoá đơn thành công'
+COMMIT TRAN
+RETURN 0
+GO
+
+insert into HOA_DON values('HD004', 'HS001', '2023-12-20', 100000, 800000, 'NV002', 'BN001')
+select * from HOA_DON

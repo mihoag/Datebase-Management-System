@@ -34,9 +34,9 @@ namespace HospitalManagement.Utils
                 
                     // Xay dung builer de noi chuoi
                     _builder = new SqlConnectionStringBuilder();
-                    _builder.DataSource = ".\\SQLEXPRESS";
-                    _builder.UserID = "haonhat";
-                    _builder.Password = "1234";
+                    _builder.DataSource = "DESKTOP-UFK5LKF";
+                    _builder.UserID = "sad";
+                    _builder.Password = "123";
                     _builder.InitialCatalog = "QUANLYPHONGKHAM";
                     _builder.TrustServerCertificate = true;
                     //

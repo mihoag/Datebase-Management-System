@@ -10,6 +10,9 @@
     <Compile Update="View\DentistSide\DentistScheduleCommitted.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\EmployeeSide\deleteBill.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\EmployeeSide\DetailPatientRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -97,6 +100,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\DentistSide\showMedicine.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EmployeeSide\deleteBill.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\EmployeeSide\DetailPatientRecord.xaml">
