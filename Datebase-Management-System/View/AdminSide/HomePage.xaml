@@ -14,9 +14,9 @@
         <Button Content="Quản lý tài khoản" Height="82" Width="329" Canvas.Left="32" Canvas.Top="210" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="accountHandler_Click"/>
         <Image Source="/Image/user.png" Height="166" Width="171" Canvas.Left="516" Canvas.Top="114" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
         <Label Content="Thông tin nhân viên" Canvas.Left="506" Canvas.Top="70" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
-        <Label Content="ID : NV01" Canvas.Left="526" Canvas.Top="291" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label Content="Họ tên: Bùi Minh Duy" Canvas.Left="526" Canvas.Top="325" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="ID : NV01" Canvas.Left="526" Canvas.Top="291" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Name="idLB"/>
+        <Label Content="Họ tên: Bùi Minh Duy" Canvas.Left="526" Canvas.Top="325" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Name="nameLB"/>
         <Button Content="Đăng xuất" Height="36" Width="97" Canvas.Left="693" Canvas.Top="388"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="logout"/>
-        <Button Content="Quản lý thuốc" Height="85" Width="329" Canvas.Left="32" Canvas.Top="335" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="Quản lý thuốc" Height="85" Width="329" Canvas.Left="32" Canvas.Top="335" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="medicine_Btn"/>
     </Canvas>
 </Window>

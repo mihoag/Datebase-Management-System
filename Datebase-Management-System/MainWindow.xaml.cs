@@ -8,6 +8,7 @@ using HospitalManagement.View.PatientSide;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -93,6 +94,13 @@ namespace HospitalManagement
             }
             role = role.TrimEnd();
             ID_user = ID_user.TrimEnd();
+
+            // store id user
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["id"].Value = ID_user;
+            config.Save(ConfigurationSaveMode.Minimal);
+            ConfigurationManager.RefreshSection("appSettings");
+
             if (role == "KHACH HANG")
             {
                 HomePatient homePatient = new HomePatient(ID_user);

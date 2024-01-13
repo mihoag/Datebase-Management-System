@@ -1,6 +1,44 @@
 ﻿use QUANLYPHONGKHAM
 go
 
+-- lay chi tiet thong tin thuoc
+CREATE OR ALTER PROCEDURE sp_chitietThuoc @ID_THUOC char(10)
+AS
+BEGIN
+	if (not exists (SELECT * FROM THUOC WHERE ID_THUOC = @ID_THUOC))
+	begin
+		raiserror(N'Không tồn tại thuốc có id này', 16, 1)
+		return 0
+	end
+
+	SELECT * FROM THUOC WHERE ID_THUOC = @ID_THUOC
+
+END
+GO
+
+exec sp_chitietThuoc 'T0001'
+
+--- lay ten admin
+CREATE OR ALTER PROCEDURE sp_getNameAdmin @ID_ADMIN char(5)
+AS
+BEGIN
+	if (not exists (SELECT * FROM NGUOI_DUNG WHERE ID_USER = @ID_ADMIN))
+	begin
+		raiserror(N'Không tồn tại người dùng có id này', 16, 1)
+		return 0
+	end
+
+	if (not exists (SELECT * FROM QUAN_TRI_VIEN WHERE ID_QTV = @ID_ADMIN))
+	begin
+		raiserror(N'Không tồn tại quản trị viên có id này', 16, 1)
+		return 0
+	end
+
+	SELECT * FROM QUAN_TRI_VIEN WHERE ID_QTV = @ID_ADMIN
+
+END
+GO
+
 -- QTV1: Thêm loại thuốc
 create or alter proc sp_THEMTHUOC 
 	@tenthuoc NVARCHAR(50),

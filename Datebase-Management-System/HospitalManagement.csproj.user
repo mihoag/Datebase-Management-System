@@ -7,15 +7,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\AdminSide\AccountHandlerPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\AdminSide\addAcountPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\AdminSide\HomePage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\DentistSide\DentistScheduleCommitted.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -72,7 +63,13 @@
     <Page Update="View\AdminSide\addAcountPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\AdminSide\EditMedicinePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\AdminSide\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminSide\MedicinePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\DentistSide\DentistSchedule.xaml">

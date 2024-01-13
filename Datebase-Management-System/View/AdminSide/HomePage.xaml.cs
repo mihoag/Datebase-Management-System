@@ -1,6 +1,10 @@
-﻿using HospitalManagement.View.EmployeeSide;
+﻿using HospitalManagement.Utils;
+using HospitalManagement.View.EmployeeSide;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,8 +27,44 @@ namespace HospitalManagement.View.AdminSide
         public HomePage()
         {
             InitializeComponent();
+            Loaded += HomePage_Loaded;
         }
 
+        private void HomePage_Loaded(object sender, RoutedEventArgs e)
+        {
+            var id_admin = ConfigurationManager.AppSettings["id"];
+            idLB.Content = "ID: " + id_admin?.ToString();
+            
+            try
+            {
+                using (SqlConnection connection = DB.Instance.Connection)
+                {
+                    using (SqlCommand cmd = new SqlCommand("sp_getNameAdmin", connection))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@ID_ADMIN", id_admin);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            // Check if the reader has rows
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
+                                {
+                                    nameLB.Content = "Họ và tên: " + reader["HOTEN"].ToString();
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+
+        }
 
         private void AddAccount_click(object sender, RoutedEventArgs e)
         {
@@ -43,6 +83,13 @@ namespace HospitalManagement.View.AdminSide
         private void accountHandler_Click(object sender, RoutedEventArgs e)
         {
             AccountHandlerPage page = new AccountHandlerPage();
+            page.Show();
+            this.Close();
+        }
+
+        private void medicine_Btn(object sender, RoutedEventArgs e)
+        {
+            MedicinePage page = new MedicinePage();
             page.Show();
             this.Close();
         }
