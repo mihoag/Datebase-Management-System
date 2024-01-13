@@ -26,12 +26,12 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Click="checkSchedule"
-            Content="Xem lịch"
+            Content="Xem lịch (uncommitted)"
             FontSize="25"
             FontWeight="Bold" />
         <Button
             Canvas.Left="29"
-            Canvas.Top="151"
+            Canvas.Top="215"
             Width="329"
             Height="46"
             HorizontalAlignment="Center"
@@ -42,7 +42,7 @@
             FontWeight="Bold" />
         <Button
             Canvas.Left="29"
-            Canvas.Top="237"
+            Canvas.Top="287"
             Width="329"
             Height="43"
             HorizontalAlignment="Center"
@@ -53,7 +53,7 @@
             FontWeight="Bold" />
         <Button
             Canvas.Left="29"
-            Canvas.Top="319"
+            Canvas.Top="356"
             Width="329"
             Height="43"
             HorizontalAlignment="Center"
@@ -101,5 +101,14 @@
             Click="logout"
             Content="Đăng xuất"
             FontSize="20" />
+        <Button
+            Canvas.Left="29"
+            Canvas.Top="134"
+            Width="329"
+            Height="50"
+            Click="checkScheduleCommitted"
+            Content="Xem lịch (committed)"
+            FontSize="25"
+            FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Canvas>
 </Window>

@@ -65,6 +65,7 @@ namespace HospitalManagement.View.PatientSide
                         cmd.Parameters.AddWithValue("@gio_kt", ps.GIO_KT);
                         Object check = cmd.ExecuteScalar();
                         // back
+                        MessageBox.Show("Đặt lịch hẹn thành công");
                         setDentistSchedule setDentistSchedule = new setDentistSchedule();
                         setDentistSchedule.Show();
                         this.Close();
@@ -73,7 +74,11 @@ namespace HospitalManagement.View.PatientSide
             }
             catch (Exception ex)
             {
+          
                 MessageBox.Show("Error: " + ex.Message);
+                setDentistSchedule setDentistSchedule = new setDentistSchedule();
+                setDentistSchedule.Show();
+                this.Close();
             }
         }
     }

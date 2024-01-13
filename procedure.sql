@@ -166,9 +166,9 @@ go
 exec sp_tatcaLHNS
 go
 
-create or alter proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
+alter proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
 as
-BEGIN
+BEGIN TRAN
    -- Kiem tra ID_NS co ton tai khong
      if not exists(select * from NHA_SI where ID_NS = @id_ns)
       begin
@@ -210,9 +210,11 @@ BEGIN
    WAITFOR DELAY '0:0:05'
    if @gio_bd between '11:00:00' and '13:30:00'
      begin
-	    print N'Khung giờ khám không hợp lệ'
-	    ROLLBACK TRAN 
-		RETURN 1
+		--RAISEERROR('Time is not valid', 16, 1);
+		--THROW 50001, 'This is an error message.', 1;
+		ROLLBACK TRAN 
+	    raiserror(N'Thời gian không hợp lệ',16,	1)
+		RETURN 1;
 	 end
    -- cap nhat lai trong lich kham cua benh nhan
    -- Tao ID lich hen tu dong tang
@@ -228,12 +230,17 @@ BEGIN
                      from LICH_KHAM)
       end
    insert into LICH_KHAM (ID_LICHHEN, ID_NS, ID_KH, ID_NV,NGAYHEN, GIO_BD, GIO_KT) values (@id_lichhen, @id_ns, @id_kh, @id_nv, @ngayhen, @gio_bd, @gio_kt)
-END
+COMMIT TRAN
 GO
 
 declare @check int
-exec @check =  sp_DATLICHKHAM  'NS002', 'BN002',  'NULL', '2025-9-11', '8:30:00', '9:00:00'
+exec @check =  sp_DATLICHKHAM  'NS001', 'BN001',  'NULL', '2025-9-11', '12:30:00', '13:00:00'
 print @check
+
+select * from LICH_NHA_SI
+delete LICH_NHA_SI where GIO_BD = '11:30:00'
+select  * from LICH_KHAM
+
 go
 
 

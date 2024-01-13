@@ -23,7 +23,6 @@ CREATE PROCEDURE sp_LICHNHASI
 AS
 BEGIN
     SET TRANSACTION ISOLATION LEVEL READ COMMITTED
-
     BEGIN TRANSACTION
     IF @ngayhen is NULL
         BEGIN
@@ -37,8 +36,26 @@ BEGIN
     COMMIT TRANSACTION
 END
 GO
-
-
+create proc p_XEMLICHNHASI_commited @id_ns nchar(5)
+as
+SET TRAN ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+  BEGIN TRY
+  -- Kiem tra ID_NS co ton tai khong
+   if not exists(select * from NHA_SI where ID_NS = @id_ns)
+   begin
+       print N'ID nha sĩ không tồn tại'
+   end
+   select * from LICH_NHA_SI where @id_ns = ID_NS
+  END TRY
+ BEGIN CATCH
+		PRINT N'LỖI HỆ THỐNG'
+		ROLLBACK TRAN
+ END CATCH
+COMMIT TRAN
+go
+exec p_XEMLICHNHASI_commited 'NS001' 
+go
 -- (LICH NHA SI)
 -- sp_DATLICHBAN: them lich ban cua nha si
 -- input: @id_ns NCHAR(5), @ngayhen DATE, @gio_bd TIME, @gio_kt TIME, @chitiet NVARCHAR(50)

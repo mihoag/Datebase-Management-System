@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\HK3_Nam1\\Database Management\\HospitalManagementV3\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {}
+    "F:\\HK3_Nam1\\Database Management\\HospitalManagentV4\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {}
   },
   "projects": {
-    "F:\\HK3_Nam1\\Database Management\\HospitalManagementV3\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {
+    "F:\\HK3_Nam1\\Database Management\\HospitalManagentV4\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\HK3_Nam1\\Database Management\\HospitalManagementV3\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
+        "projectUniqueName": "F:\\HK3_Nam1\\Database Management\\HospitalManagentV4\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
         "projectName": "HospitalManagement",
-        "projectPath": "F:\\HK3_Nam1\\Database Management\\HospitalManagementV3\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
+        "projectPath": "F:\\HK3_Nam1\\Database Management\\HospitalManagentV4\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\HK3_Nam1\\Database Management\\HospitalManagementV3\\Datebase-Management-System\\Datebase-Management-System\\obj\\",
+        "outputPath": "F:\\HK3_Nam1\\Database Management\\HospitalManagentV4\\Datebase-Management-System\\Datebase-Management-System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -59,5 +59,12 @@ namespace HospitalManagement.View.DentistSide
             mainWD.Show();
             this.Close();
         }
+
+        private void checkScheduleCommitted(object sender, RoutedEventArgs e)
+        {
+            DentistScheduleCommitted dentistScheduleCommitted = new DentistScheduleCommitted();
+            dentistScheduleCommitted.Show();
+            this.Close();
+        }
     }
 }
