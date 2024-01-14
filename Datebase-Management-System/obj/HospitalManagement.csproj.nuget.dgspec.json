@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bản lastest hqt\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {}
+    "C:\\Users\\ADMIN\\Workspace\\HQTCSDL\\Project\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {}
   },
   "projects": {
-    "D:\\Bản lastest hqt\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {
+    "C:\\Users\\ADMIN\\Workspace\\HQTCSDL\\Project\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bản lastest hqt\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Workspace\\HQTCSDL\\Project\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
         "projectName": "HospitalManagement",
-        "projectPath": "D:\\Bản lastest hqt\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Bản lastest hqt\\Datebase-Management-System\\Datebase-Management-System\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\Workspace\\HQTCSDL\\Project\\Datebase-Management-System\\Datebase-Management-System\\HospitalManagement.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\Workspace\\HQTCSDL\\Project\\Datebase-Management-System\\Datebase-Management-System\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +51,10 @@
             "PropertyChanged.Fody": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
             }
           },
           "imports": [
@@ -68,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

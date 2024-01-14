@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:HospitalManagement.View.EmployeeSide"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="ListFreeTimeDentist" Height="470" Width="830"
-        Loaded="MainLoad"
+    Title="ListFreeTimeDentist"
+    Height="550"
+    Width="850"
+    Loaded="MainLoad"
         >
     <Canvas>
         <Label Canvas.Left="238" Height="58" Width="468" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Content="LỊCH KHÁM CỦA NHA SĨ"/>

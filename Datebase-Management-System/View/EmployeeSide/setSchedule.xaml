@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:HospitalManagement.View.EmployeeSide"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="setSchedule" Height="450" Width="800"
-        Loaded="MainLoad">
+    Title="setSchedule"
+    Height="550"
+    Width="850"
+    Loaded="MainLoad">
     <Canvas>
         <Label FontSize="30" FontWeight="Bold" Content="ĐẶT LỊCH KHÁM CHO BỆNH NHÂN" Margin="138,10,138,374"/>
         <TextBlock Text="Ngày hẹn" FontSize="20" Canvas.Left="44" Canvas.Top="266"/>

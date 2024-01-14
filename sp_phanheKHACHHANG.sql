@@ -19,10 +19,7 @@ BEGIN
 END
 GO
 
-DECLARE @TEST bit
-EXEC @TEST = sp_kiemTraSDTKH  '0123456788'
-PRINT @TEST
-GO
+
 
 --- (Khach hang)
 --- sp_thongTinKhachHang: Lay thong tin khach hang
@@ -44,8 +41,7 @@ BEGIN
 END
 GO
 
-exec sp_thongTinKhachHang '0123456789'
-go
+
 
 --- (Khach hang)
 --- sp_capNhatThongTin: cap nhat thong tin khach hang
@@ -78,8 +74,7 @@ BEGIN
 END
 GO
 
-exec sp_CapNhatThongTin '0123456789',  N'Nguyễn Thanh Nguyên', '2002-11-20', N'Tân Tây, Tiền Giang'
-GO
+
 
 
 --- (Khach hang)
@@ -95,8 +90,7 @@ BEGIN
 END
 GO
 
-exec sp_chiTietBenhAn_Thuoc 'HS001', '2023-12-18'
-go
+
 
 CREATE OR ALTER PROC sp_chiTietBenhAn_DV @id_bn nchar(5), @ngay_kham Date
 AS
@@ -107,8 +101,7 @@ BEGIN
 END
 GO
 
-exec sp_chiTietBenhAn_DV 'HS001', '2023-12-18'
-go
+
 
 CREATE OR ALTER PROC sp_chiTietBenhAn_HD @id_bn nchar(5), @ngay_kham Date
 AS
@@ -117,8 +110,6 @@ BEGIN
 END
 GO
 
-exec sp_chiTietBenhAn_HD 'HS001', '2023-12-18'
-go
 --- (Khach hang)
 --- sp_timLichRanh: tim danh sach bac si ranh trong ngay va thoi gian (SDT)
 --- input: @SDT char(10)
@@ -139,8 +130,7 @@ END
 GO
 
 
-exec sp_xemLichKham 'BN001'
-go
+
 
 --- (Khach hang)
 --- sp_xemHoSoBN: lay ho so benh nhan
@@ -153,8 +143,6 @@ BEGIN
 END
 GO
 
-exec sp_xemHoSoBN 'BN001'
-go
 
 create or alter proc sp_tatcaLHNS 
 as
@@ -163,10 +151,8 @@ begin
 end
 go
 
-exec sp_tatcaLHNS
-go
 
-alter proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
+create or alter proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
 as
 BEGIN TRAN
    -- Kiem tra ID_NS co ton tai khong
@@ -233,13 +219,8 @@ BEGIN TRAN
 COMMIT TRAN
 GO
 
-declare @check int
-exec @check =  sp_DATLICHKHAM  'NS001', 'BN001',  'NULL', '2025-9-11', '12:30:00', '13:00:00'
-print @check
 
-select * from LICH_NHA_SI
-delete LICH_NHA_SI where GIO_BD = '11:30:00'
-select  * from LICH_KHAM
+
 
 go
 
@@ -310,8 +291,6 @@ begin
 end
 go
 
-exec sp_addNewAccount '0133456789', '1234', 'NHA SI', N'Nguyễn Thành Nhân'
-go
 
 --- (Quan tri vien)
 --- sp_getAllAccount: lay tat ca account (nhan vien, nguoi dung, bac si)
@@ -328,8 +307,7 @@ begin
 end
 go
 
-exec sp_getAllAccount 
-go
+
 --- (Quan tri vien)
 --- sp_searchUser: search nguoi dung
 --- input: @search nvarchar(10)
@@ -345,8 +323,7 @@ begin
 end
 go
 
-exec sp_searchUser '01234567'
-go
+
 
 --- (Quan tri vien)
 --- sp_lockAccount: khoa tai khoan
@@ -365,8 +342,7 @@ BEGIN
 END
 go
 
-exec sp_lockAccount 'BN001'
-go
+
 
 --- (Quan tri vien)
 --- sp_activeAccount: mo khoa tai khoan
@@ -385,5 +361,4 @@ BEGIN
 END
 go
 
-exec sp_activeAccount 'BN001'
-go
+

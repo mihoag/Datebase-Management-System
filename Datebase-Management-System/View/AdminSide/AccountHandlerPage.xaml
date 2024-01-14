@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         FontSize="18"
         WindowStartupLocation="CenterScreen"
-        Title="AccountHandlerPage" Height="500" Width="800">
+        Title="AccountHandlerPage" Height="550" Width="850">
     <Canvas>
         <Label FontSize="30" FontWeight="Bold" Content="QUẢN LÝ TÀI KHOẢN" HorizontalAlignment="Center" Canvas.Left="219" VerticalAlignment="Top" Canvas.Top="17"></Label>
 

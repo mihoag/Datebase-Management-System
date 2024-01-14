@@ -1,11 +1,8 @@
 ﻿use QUANLYPHONGKHAM
 go
 -- Sp đặt lịch khám
-select * from NHA_SI
-select * from KHACH_HANG
-go
 -- drop proc  sp_DATLICHKHAM
-create proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
+create or alter proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
 as
 begin
 SET TRAN ISOLATION LEVEL READ COMMITTED
@@ -72,17 +69,10 @@ COMMIT TRAN
 RETURN 2
 end
 GO
--- TEST
-declare @check int
-exec @check =  sp_DATLICHKHAM  'NS002', 'BN002',  'NV001', '2020-9-11', '8:30:00', '9:00:00'
-print @check
-go
----
-select * from LICH_KHAM
-delete from LICH_KHAM where ID_LICHHEN = 'LK2'
-delete from LICH_NHA_SI
+
+
 -- store procedure xem thuốc
-create proc sp_xemthuoc 
+create or alter proc sp_xemthuoc 
 as
 SET TRAN ISOLATION LEVEL READ COMMITTED
 BEGIN TRAN
@@ -90,22 +80,19 @@ BEGIN TRAN
 COMMIT TRAN
 go
 
-exec sp_xemthuoc  
-go
 
 
 --- sp xem thuoc theo ten
-create proc sp_timthuoctheoten @tenthuoc nvarchar(50)
+create or alter proc sp_timthuoctheoten @tenthuoc nvarchar(50)
 as
 begin tran
    select * from THUOC where TENTHUOC = @tenthuoc
 commit tran
 go
-  exec sp_timthuoctheoten 'aspirin'
-go
+
 
 -- sp xem ho so benh nhan
-create proc sp_HSBN  
+create or alter proc sp_HSBN  
 as
 SET TRAN ISOLATION LEVEL READ COMMITTED
 begin tran
@@ -114,15 +101,13 @@ where  hs.ID_KH = k.ID_KH and n.ID_USER = k.ID_KH
 commit tran
 go
 
--- Tesst 
-exec sp_HSBN
 
 ----------------------------------------------------------------
 -- Tao store procedure tim HSBN theo so dien thoai
 go
 
 
-create proc sp_HSBN_DT @dt CHAR(10) 
+create or alter proc sp_HSBN_DT @dt CHAR(10) 
 as
 SET TRAN ISOLATION LEVEL READ COMMITTED
 begin tran
@@ -130,13 +115,11 @@ select hs.ID_BN, k.ID_KH , k.HOTEN from HS_BENH_NHAN  hs , KHACH_HANG k, NGUOI_D
 where  hs.ID_KH = k.ID_KH and n.ID_USER = k.ID_KH and n.DIENTHOAI = @dt
 commit tran
 go
--- test :
-exec sp_HSBN_DT '098765111'
-go
+
 
 -- Store proc lap hoa don
 -- drop proc sp_laphoadon
-create proc sp_laphoadon  @id_bn nchar(5), @ngaykham date, @phikham int, 
+create or alter proc sp_laphoadon  @id_bn nchar(5), @ngaykham date, @phikham int, 
 @id_nv nchar(5), @id_kh nchar(5)
 as
 begin tran 
@@ -186,26 +169,12 @@ begin tran
 commit tran
 go
 
--- Test
-exec sp_laphoadon  'BN001' , '2023-11-22', '100000' , 'NV001' ,'BN001' 
-select * from NHAN_VIEN
-delete from HOA_DON where ID_HOADON = 'HD012'
-select * from HOA_DON
 
-------test
-
-select * from LICH_KHAM
-select * from LICH_NHA_SI
-select * from THUOC
-select * from NHA_SI
-select * from HS_BENH_NHAN
-select * from KHACH_HANG
-select * from NGUOI_DUNG
 
 
 go
 --- Sp chi tiet ho so benh nhan theo IDBN
-create proc sp_chitietHSBN @id_bn nchar(5)
+create or alter proc sp_chitietHSBN @id_bn nchar(5)
 as
 begin tran
     if not exists(select * from HS_BENH_NHAN where @id_bn = ID_BN)
@@ -215,38 +184,28 @@ begin tran
 	select * from CHI_TIET_HS where @id_bn = ID_BN
 commit tran
 go
--- Test 
-exec sp_chitietHSBN 'BN001'
 
 
 go
 ---Store procedure xem tat ca lich hen cua cac nha si
-create proc sp_tatcaLHNS 
+create or alter proc sp_tatcaLHNS 
 as
 begin tran
    select *  from LICH_NHA_SI
 commit tran
 go
-exec sp_tatcaLHNS
+
 
 -- Store proc xem lich nha si theo ID nha si
 go
 
 -- Lich hen nha si theo ID
-create proc sp_LHNS_ID @ID_NS NCHAR(5)
+create or alter proc sp_LHNS_ID @ID_NS NCHAR(5)
 as
 begin tran
    select *  from LICH_NHA_SI where @ID_NS = ID_NS
 commit tran
 go
-
--- test
-exec sp_LHNS_ID 'NS001'
--- 
-
-exec p_DATLICHKHAM 'LH006', 'NS004', 'BN004', null, '2023-11-11', '8:30:00', '9:00:00'
-
-select * from LICH_KHAM
 
 
 --store procedure xoá 1 hoá đơn
@@ -269,5 +228,32 @@ COMMIT TRAN
 RETURN 0
 GO
 
-insert into HOA_DON values('HD004', 'HS001', '2023-12-20', 100000, 800000, 'NV002', 'BN001')
-select * from HOA_DON
+--IN DS THUOC ERROR PHANTOM
+IF OBJECT_ID('dbo.sp_INDSTHUOC_ERROR', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_INDSTHUOC_ERROR
+END
+GO
+
+CREATE PROC sp_INDSTHUOC_ERROR
+AS
+SET TRANSACTION ISOLATION
+LEVEL REPEATABLE READ
+BEGIN TRAN
+   BEGIN TRY
+		SELECT COUNT(*) AS TONG_SO_THUOC FROM THUOC
+
+		--TEST
+		WAITFOR DELAY '00:00:05'
+
+		SELECT * FROM THUOC
+   END TRY
+   BEGIN CATCH
+		PRINT ERROR_MESSAGE()
+		ROLLBACK TRAN
+		RETURN 1	
+   END CATCH
+
+COMMIT TRAN
+RETURN 0
+GO

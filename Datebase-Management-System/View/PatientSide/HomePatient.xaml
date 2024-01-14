@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:HospitalManagement.View.PatientSide"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="HomePatient" Height="520" Width="850">
+    Title="HomePatient"
+    Height="550"
+    Width="850">
     <Canvas>
         <Label FontSize="30" FontWeight="Bold" Content="PHÒNG KHÁM NHA KHOA" HorizontalAlignment="Left" Canvas.Left="230" VerticalAlignment="Center"></Label>
         <Button Content="Đặt lịch khám" Height="72" Width="307" Canvas.Left="29" Canvas.Top="71" FontWeight="Bold" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSetSchedule" ></Button>

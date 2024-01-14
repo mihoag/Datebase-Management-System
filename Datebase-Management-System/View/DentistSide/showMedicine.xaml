@@ -7,8 +7,10 @@
         xmlns:local="clr-namespace:HospitalManagement.View.DentistSide"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="showMedicine" Height="450" Width="800"
-        Loaded="MainLoad"
+    Title="showMedicine"
+    Height="550"
+    Width="850"
+    Loaded="MainLoad"
         >
     <Canvas>
         <Label Canvas.Left="278" Height="58" Width="468" FontSize="30             " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Content="DANH MỤC THUỐC"/>

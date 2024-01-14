@@ -7,7 +7,7 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         FontSize="20"
-        Title="addAcountPage" Height="450" Width="800">
+        Title="addAcountPage" Height="550" Width="850">
     <Canvas>
         <Label FontSize="30" FontWeight="Bold" Content="THÊM TÀI KHOẢN MỚI" HorizontalAlignment="Center" Canvas.Left="219" VerticalAlignment="Top" Canvas.Top="17"></Label>
         <TextBlock FontSize="20" Canvas.Left="205" Canvas.Top="88" HorizontalAlignment="Center" VerticalAlignment="Top"><Run Text="Số điện thoại"/><LineBreak/><Run/></TextBlock>

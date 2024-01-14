@@ -835,3 +835,16 @@ D:\Bản lastest hqt\Datebase-Management-System\Datebase-Management-System\obj\D
 D:\Bản lastest hqt\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\showBill.baml
 D:\Bản lastest hqt\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\deleteBill.g.cs
 D:\Bản lastest hqt\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\deleteBill.baml
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\bin\Debug\net6.0-windows\HospitalManagement.dll.config
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\EditMedicinePage.g.cs
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\MedicinePage.g.cs
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\showBill.g.cs
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\DentistSide\DentistScheduleCommitted.g.cs
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\deleteBill.g.cs
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\EditMedicinePage.baml
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\MedicinePage.baml
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\AdminSide\showBill.baml
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\DentistSide\DentistScheduleCommitted.baml
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\obj\Debug\net6.0-windows\View\EmployeeSide\deleteBill.baml
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\ADMIN\Workspace\HQTCSDL\Project\Datebase-Management-System\Datebase-Management-System\bin\Debug\net6.0-windows\itextsharp.dll

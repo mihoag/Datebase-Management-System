@@ -7,7 +7,9 @@
          WindowStartupLocation="CenterScreen"
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
         mc:Ignorable="d"
-        Title="About Me" Height="450" Width="800">
+    Title="About Me"
+    Height="550"
+    Width="850">
     <Canvas>
         <Label Canvas.Left="251" Height="58" Width="468" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Content="THÔNG TIN CÁ NHÂN"/>
         <TextBlock Text="Số điện thoại:" FontSize="20" Canvas.Left="181" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>

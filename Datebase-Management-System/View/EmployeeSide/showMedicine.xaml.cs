@@ -66,7 +66,7 @@ namespace HospitalManagement.View.EmployeeSide
                                     string ID_Thuoc = reader["ID_THUOC"].ToString();
                                     string tenthuoc = reader["TENTHUOC"].ToString();
                                     string donvitinh = reader["DONVITINH"].ToString();
-                                    string chidinh = reader["DONVITINH"].ToString();
+                                    string chidinh = reader["CHIDINH"].ToString();
                                     int tonkho = (int)reader["TONKHO"];
                                     string ngayhethan = reader["NGAYHETHAN"].ToString();
                                     int dongia = (int)reader["DONGIA"];

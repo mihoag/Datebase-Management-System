@@ -16,8 +16,6 @@ BEGIN
 END
 GO
 
-exec sp_chitietThuoc 'T0001'
-
 --- lay ten admin
 CREATE OR ALTER PROCEDURE sp_getNameAdmin @ID_ADMIN char(5)
 AS
@@ -141,16 +139,6 @@ begin
 end
 go
 
---Test
-exec sp_THEMTHUOC 'abc', N'viên', N'2 ngày 1 lần', 100, '1-10-2024', 3000, 'QTV01' 
-exec sp_THEMTHUOC 'acd', N'sủi', N'1 ngày 2 lần', 200, '1-12-2024', 3000, 'QTV01' 
-exec sp_THEMTHUOC 'a3b', N'tiêm', N'1 ngày 1 lần', 100, '1-14-2024', 10000, 'QTV01' 
-select * from THUOC
-exec sp_CAPNHAPSOLUONGTON 'T0007', 20
-exec sp_CAPNHAPSOLUONGTON 'T0008', 50
-select * from THUOC
-exec sp_XOATHUOC 'T0007'
-select * from THUOC
 go
 --QTV6: Xem danh sách người dùng - error
 CREATE OR ALTER PROC sp_XEMNGUOIDUNG

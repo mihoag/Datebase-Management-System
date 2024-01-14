@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:HospitalManagement.View.PatientSide"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="ViewSchedulePage" Height="500" Width="820">
+    Title="ViewSchedulePage"
+    Height="550"
+    Width="850">
     <Canvas>
         <Label Canvas.Left="166" Height="58" Width="520" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Content="DANH SÁCH LỊCH HẸN VỚI NHA SĨ"/>
         <Label Content="Search" Canvas.Left="10" Canvas.Top="62" FontWeight="DemiBold"></Label>

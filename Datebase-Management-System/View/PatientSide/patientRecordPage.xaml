@@ -7,7 +7,9 @@
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
-        Title="patientRecordPage" Height="500" Width="820">
+    Title="patientRecordPage"
+    Height="550"
+    Width="850">
     <Canvas>
         <Label Canvas.Left="251" Height="58" Width="468" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Content="HỒ SƠ BỆNH NHÂN"/>
         <Label Content="Search" Canvas.Left="10" Canvas.Top="62" FontWeight="DemiBold"></Label>

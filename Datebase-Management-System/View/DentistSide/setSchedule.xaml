@@ -6,8 +6,8 @@
     xmlns:local="clr-namespace:HospitalManagement.View.DentistSide"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="setSchedule"
-    Width="800"
-    Height="450"
+    Height="550"
+    Width="850"
     Loaded="MainLoad"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
