@@ -37,6 +37,8 @@ BEGIN
     COMMIT TRANSACTION
 END
 GO
+
+
 create or alter proc p_XEMLICHNHASI_commited @id_ns nchar(5)
 as
 SET TRAN ISOLATION LEVEL READ COMMITTED
@@ -57,7 +59,36 @@ BEGIN TRAN
  END CATCH
 COMMIT TRAN
 go
+create or alter proc sp_XEMLICHNHASI_Error @id_ns nchar(5)
+as
+SET TRAN ISOLATION LEVEL READ UNCOMMITTED
+BEGIN TRAN
+  BEGIN TRY
+  -- Kiem tra ID_NS co ton tai khong
+   if not exists(select * from NHA_SI where ID_NS = @id_ns)
+   begin
+       ;throw 50000, N'ID nha sĩ không tồn tại', 1
+   end
+   select * from LICH_NHA_SI where @id_ns = ID_NS
+  END TRY
+ BEGIN CATCH
+		ROLLBACK TRAN
+		DECLARE @ErrorMessage NVARCHAR(4000)
+        SET @ErrorMessage = ERROR_MESSAGE()
+        RAISERROR (@ErrorMessage, 16, 1)
+ END CATCH
+COMMIT TRAN
+go
 
+-- (LICH NHA SI)
+-- sp_DATLICHBAN: them lich ban cua nha si
+-- input: @id_ns NCHAR(5), @ngayhen DATE, @gio_bd TIME, @gio_kt TIME, @chitiet NVARCHAR(50)
+-- output: 
+IF OBJECT_ID('dbo.sp_DATLICHBAN', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_DATLICHBAN
+END
+GO
 go
 -- (LICH NHA SI)
 -- sp_DATLICHBAN: them lich ban cua nha si
