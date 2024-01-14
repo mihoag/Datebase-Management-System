@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Bản lastest hqt\Datebase-Management-System\Datebase-Management-System\App.xaml
-32965583239
+331071046219
 
-491437840770
+50-245297925
 210-959760413
-MainWindow.xaml;View\AdminSide\AccountHandlerPage.xaml;View\AdminSide\addAcountPage.xaml;View\AdminSide\EditMedicinePage.xaml;View\AdminSide\HomePage.xaml;View\AdminSide\MedicinePage.xaml;View\AdminSide\showBill.xaml;View\DentistSide\DentistSchedule.xaml;View\DentistSide\DentistScheduleCommitted.xaml;View\DentistSide\DetailPatientRecord.xaml;View\DentistSide\HomeDentist.xaml;View\DentistSide\keDon.xaml;View\DentistSide\patientRecord.xaml;View\DentistSide\PersonalInformation.xaml;View\DentistSide\setSchedule.xaml;View\DentistSide\showMedicine.xaml;View\EmployeeSide\deleteBill.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\EmployeeSide\showMedicine.xaml;View\PatientSide\detailPatientRecord.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\setDentistSchedule2.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
+MainWindow.xaml;View\AdminSide\AccountHandlerPage.xaml;View\AdminSide\addAcountPage.xaml;View\AdminSide\addMedicine.xaml;View\AdminSide\EditMedicinePage.xaml;View\AdminSide\HomePage.xaml;View\AdminSide\MedicinePage.xaml;View\AdminSide\showBill.xaml;View\DentistSide\DentistSchedule.xaml;View\DentistSide\DentistScheduleCommitted.xaml;View\DentistSide\DetailPatientRecord.xaml;View\DentistSide\HomeDentist.xaml;View\DentistSide\keDon.xaml;View\DentistSide\patientRecord.xaml;View\DentistSide\PersonalInformation.xaml;View\DentistSide\setSchedule.xaml;View\DentistSide\showMedicine.xaml;View\EmployeeSide\deleteBill.xaml;View\EmployeeSide\DetailPatientRecord.xaml;View\EmployeeSide\HomeEmployee.xaml;View\EmployeeSide\ListFreeTimeDentist.xaml;View\EmployeeSide\patientRecord.xaml;View\EmployeeSide\setbill.xaml;View\EmployeeSide\setSchedule.xaml;View\EmployeeSide\showMedicine.xaml;View\PatientSide\detailPatientRecord.xaml;View\PatientSide\HomePatient.xaml;View\PatientSide\patientRecordPage.xaml;View\PatientSide\PersonalInformation.xaml;View\PatientSide\setDentistSchedule.xaml;View\PatientSide\setDentistSchedule2.xaml;View\PatientSide\ViewSchedulePage.xaml;View\Register.xaml;
 
 True
 

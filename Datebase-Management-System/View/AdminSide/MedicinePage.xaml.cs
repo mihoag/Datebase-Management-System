@@ -108,5 +108,12 @@ namespace HospitalManagement.View.AdminSide
             page.Show();
             this.Close();
         }
+
+        private void addMedicine(object sender, RoutedEventArgs e)
+        {
+            addMedicine addMedicine = new addMedicine();
+            addMedicine.Show();
+            this.Close();
+        }
     }
 }

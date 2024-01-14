@@ -34,5 +34,6 @@
             </ListView.ItemContainerStyle>
         </ListView>
         <Button Height="29" Width="56" Canvas.Left="718" Canvas.Top="395" Click="back">BACK</Button>
+        <Button Height="59" Width="110" Canvas.Left="20" Canvas.Top="395" Click="addMedicine" HorizontalAlignment="Left" VerticalAlignment="Center">Thêm thuốc</Button>
     </Canvas>
 </Window>
