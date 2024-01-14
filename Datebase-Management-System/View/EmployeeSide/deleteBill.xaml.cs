@@ -64,5 +64,12 @@ namespace HospitalManagement.View.EmployeeSide
                 MessageBox.Show("Lỗi: " + ex.Message, "Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void back(object sender, RoutedEventArgs e)
+        {
+            HomeEmployee home = new HomeEmployee(HomeEmployee.id_nv);
+            home.Show();
+            this.Close();
+        }
     }
 }

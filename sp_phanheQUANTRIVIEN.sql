@@ -47,6 +47,8 @@ create or alter proc sp_THEMTHUOC
 	@dongia INT,
 	@id_qtv NCHAR(5)
 as
+SET TRANSACTION ISOLATION
+LEVEL READ COMMITTED
 begin
 	-- Kiểm tra id quản trị viên đã tồn tại chưa
 	if (not exists (SELECT * FROM QUAN_TRI_VIEN WHERE ID_QTV = @id_qtv))
@@ -139,6 +141,7 @@ begin
 end
 go
 
+
 go
 --QTV6: Xem danh sách người dùng - error
 CREATE OR ALTER PROC sp_XEMNGUOIDUNG
@@ -182,3 +185,4 @@ BEGIN TRAN
 
 COMMIT TRAN
 RETURN 0
+

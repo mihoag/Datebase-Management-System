@@ -151,9 +151,6 @@
             VerticalContentAlignment="Center"
             FontSize="20">
             <ComboBoxItem IsSelected="True">Khách hàng</ComboBoxItem>
-            <ComboBoxItem>Nha sĩ</ComboBoxItem>
-            <ComboBoxItem>Nhân viên</ComboBoxItem>
-            <ComboBoxItem>Quản trị viên</ComboBoxItem>
         </ComboBox>
     </Canvas>
 </Window>

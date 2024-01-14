@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\AdminSide\addMedicine.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\DentistSide\DentistScheduleCommitted.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -64,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AdminSide\addAcountPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminSide\addMedicine.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AdminSide\EditMedicinePage.xaml">

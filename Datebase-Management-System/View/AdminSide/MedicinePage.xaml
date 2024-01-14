@@ -44,9 +44,13 @@
             VerticalAlignment="Top"
             RenderTransformOrigin="0.512,0.535">
             <ListView.Resources>
-                <ContextMenu x:Key="ItemContextMenu">
-                    <MenuItem Click="Edit_medicine" Header="Edit" />
-                    <MenuItem Header="Delete" />
+                <ContextMenu
+                    x:Key="ItemContextMenu">
+                    <MenuItem
+                        Click="Edit_medicine"
+                        Header="Edit" />
+                    <MenuItem
+                        Header="Delete" />
                 </ContextMenu>
             </ListView.Resources>
             <ListView.View>
@@ -74,8 +78,11 @@
                 </GridView>
             </ListView.View>
             <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="ContextMenu" Value="{StaticResource ItemContextMenu}" />
+                <Style
+                    TargetType="ListViewItem">
+                    <Setter
+                        Property="ContextMenu"
+                        Value="{StaticResource ItemContextMenu}" />
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
@@ -87,5 +94,14 @@
             Click="back">
             BACK
         </Button>
+        <Button Height="29" Width="56" Canvas.Left="718" Canvas.Top="395" Click="back">BACK</Button>
+        <Button
+            Height="59"
+            Width="110"
+            Canvas.Left="20"
+            Canvas.Top="395"
+            Click="addMedicine"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center">Thêm thuốc</Button>
     </Canvas>
 </Window>

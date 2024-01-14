@@ -18,7 +18,7 @@
         <Label Content="Họ tên: Bùi Minh Duy" Canvas.Left="526" Canvas.Top="325" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Name="nameLB"/>
         <Button Content="Đăng xuất" Height="36" Width="97" Canvas.Left="693" Canvas.Top="388"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="logout"/>
         <Button Content="Quản lý thuốc" Height="85" Width="329" Canvas.Left="32" Canvas.Top="290" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Click="medicine_Btn"/>
-        <Button Content="Xem hoá đơn" Height="85" Width="329" Canvas.Left="32" Canvas.Top="406" FontWeight="Bold" FontSize="25" Click="bill_Btn" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button Height="40" Width="120" Canvas.Left="386" Canvas.Top="428" FontSize="20"  Content="Bật fix lỗi" RenderTransformOrigin="0.628,1.634" Click="fix_click" x:Name="errorBtn" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Xem hoá đơn" Height="85" Width="329" Canvas.Left="32" Canvas.Top="388" FontWeight="Bold" FontSize="25" Click="bill_Btn" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Height="40" Width="120" Canvas.Left="385" Canvas.Top="390" FontSize="20"  Content="Bật fix lỗi" RenderTransformOrigin="0.628,1.634" Click="fix_click" x:Name="errorBtn" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </Window>

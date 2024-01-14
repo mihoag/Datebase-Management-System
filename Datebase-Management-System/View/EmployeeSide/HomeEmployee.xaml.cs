@@ -85,7 +85,8 @@ namespace HospitalManagement.View.EmployeeSide
 
         private void printFix(object sender, RoutedEventArgs e)
         {
-
+            LoadAllMedicine("sp_INDSTHUOC_FIX");
+            ExportPDF();
         }
         private void LoadAllMedicine(string proc)
         {
@@ -167,14 +168,15 @@ namespace HospitalManagement.View.EmployeeSide
                     {
                         try
                         {
-                            PdfPTable pdfTable = new PdfPTable(MedicineNumber);
+                            PdfPTable pdfTable = new PdfPTable(8);
                             pdfTable.DefaultCell.Padding = 3;
                             pdfTable.WidthPercentage = 100;
                             pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
 
-                            
-                                    
-                            PdfPCell cell = new PdfPCell(new Phrase("ID_THUOC"));
+
+                            PdfPCell cell = new PdfPCell(new Phrase("STT"));
+                            pdfTable.AddCell(cell);
+                            cell = new PdfPCell(new Phrase("ID_THUOC"));
                             pdfTable.AddCell(cell);
                             cell = new PdfPCell(new Phrase("TENTHUOC"));
                             pdfTable.AddCell(cell);
@@ -190,8 +192,9 @@ namespace HospitalManagement.View.EmployeeSide
                             pdfTable.AddCell(cell);
 
 
-                            foreach (Medicine row in listMedicine)
+                            foreach (var (row, index) in listMedicine.Select((r, i) => (r, i)))
                             {
+                                pdfTable.AddCell((index+1).ToString());
                                 pdfTable.AddCell(row.ID_THUOC.ToString());
                                 pdfTable.AddCell(row.TEN_THUOC.ToString());
                                 pdfTable.AddCell(row.DONVITINH.ToString());
