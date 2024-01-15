@@ -63,6 +63,14 @@ namespace HospitalManagement.View.DentistSide
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@id_ns", id_ns);
+                        if(ngayhen == null)
+                        {
+                            cmd.Parameters.AddWithValue("@ngayhen", DBNull.Value);
+                        } else
+                        {
+                            cmd.Parameters.AddWithValue("@ngayhen", ngayhen);
+                        }
+
 
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
@@ -96,7 +104,7 @@ namespace HospitalManagement.View.DentistSide
         {
             DateTime selectedDate = (DateTime)ngayhenDP.SelectedDate;
             string NGAYHEN = selectedDate.Year + "-" + selectedDate.Month + "-" + selectedDate.Day;
-            this.loadAllSchedule("NS001", NGAYHEN);
+            this.loadAllSchedule(HomeDentist.ID_dentist, NGAYHEN);
         }
     }
 }

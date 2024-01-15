@@ -54,7 +54,7 @@ namespace HospitalManagement.View.PatientSide
             {
                 using (SqlConnection connection = DB.Instance.Connection)
                 {
-                    using (SqlCommand cmd = new SqlCommand("sp_DATLICHKHAM", connection))
+                    using (SqlCommand cmd = new SqlCommand("sp_DATLICHKHAM_KH", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@id_ns", ps.ID_NS);

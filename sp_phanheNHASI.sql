@@ -39,7 +39,7 @@ END
 GO
 
 
-create or alter proc p_XEMLICHNHASI_commited @id_ns nchar(5)
+create or alter proc p_XEMLICHNHASI_commited @id_ns nchar(5), @ngayhen DATE
 as
 SET TRAN ISOLATION LEVEL READ COMMITTED
 BEGIN TRAN
@@ -49,7 +49,14 @@ BEGIN TRAN
    begin
        ;throw 50000, N'ID nha sĩ không tồn tại', 1
    end
-   select * from LICH_NHA_SI where @id_ns = ID_NS
+   IF @ngayhen is NULL
+        BEGIN
+            SELECT * FROM LICH_NHA_SI WHERE ID_NS = @id_ns
+        END
+    ELSE
+        BEGIN
+            SELECT * FROM LICH_NHA_SI WHERE ID_NS = @id_ns AND NGAYHEN = @ngayhen
+        END
   END TRY
  BEGIN CATCH
 		ROLLBACK TRAN
@@ -59,7 +66,7 @@ BEGIN TRAN
  END CATCH
 COMMIT TRAN
 go
-create or alter proc sp_XEMLICHNHASI_Error @id_ns nchar(5)
+create or alter proc sp_XEMLICHNHASI_Error @id_ns nchar(5), @ngayhen DATE
 as
 SET TRAN ISOLATION LEVEL READ UNCOMMITTED
 BEGIN TRAN
@@ -69,7 +76,14 @@ BEGIN TRAN
    begin
        ;throw 50000, N'ID nha sĩ không tồn tại', 1
    end
-   select * from LICH_NHA_SI where @id_ns = ID_NS
+   IF @ngayhen is NULL
+        BEGIN
+            SELECT * FROM LICH_NHA_SI WHERE ID_NS = @id_ns
+        END
+    ELSE
+        BEGIN
+            SELECT * FROM LICH_NHA_SI WHERE ID_NS = @id_ns AND NGAYHEN = @ngayhen
+        END
   END TRY
  BEGIN CATCH
 		ROLLBACK TRAN

@@ -69,7 +69,15 @@ namespace HospitalManagement.View.DentistSide
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@id_ns", id_ns);
-                      
+                        if (ngayhen == null)
+                        {
+                            cmd.Parameters.AddWithValue("@ngayhen", DBNull.Value);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@ngayhen", ngayhen);
+                        }
+
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             // Check if the reader has rows

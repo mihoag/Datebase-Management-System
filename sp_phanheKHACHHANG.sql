@@ -152,7 +152,7 @@ end
 go
 
 
-create or alter proc sp_DATLICHKHAM @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
+create or alter proc sp_DATLICHKHAM_KH @id_ns nchar(5), @id_kh nchar(5), @id_nv nchar(5), @ngayhen date, @gio_bd time, @gio_kt time
 as
 BEGIN TRAN
    -- Kiem tra ID_NS co ton tai khong
